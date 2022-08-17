@@ -7,8 +7,7 @@ pipeline {
         stages {
             stage('checkout') {
                 steps {
-                    git branch: 'master', credentialsId: 'azuredevops-macevedo', url: 'https://valorunico@dev.azure.com/valorunico/Idemia_INT_P_SRCeI/_git/AppNoVidentes_IOS_SRCeI'
-                    echo '###########Carga del repositorio##########################'
+                     echo '###########Carga del repositorio##########################'
                 }
             }
             stage('SonarCloud') {
